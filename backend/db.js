@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 async function dbconnect() {
     // database connection
     mongoose
-    .connect(process.env.MONGO_URI)
+    .connect('mongodb+srv://binishfarhan89:vamp1989@cluster0.vzdef1c.mongodb.net/mern_todo')
     .then(() => console.log("Database Connected"))
     .catch((err) => console.log(err))
     }

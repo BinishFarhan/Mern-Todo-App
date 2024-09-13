@@ -99,7 +99,7 @@ const DisplayTodos = () => {
                                     <div className="flex grow ">
                                         <li className="font-serif list-none ms-5 flex flex-col w-full " key={item._id}>
                                             <h1 className='text-2xl capitalize w-full font-serif'>{item.title}</h1>
-                                            <h1 className='text-base  w-full font-serif'>{item.desc.length > 40 ?
+                                            <h1 className='text-base  w-full font-serif'>{item?.desc?.length > 40 ?
                                                 <>{item.desc.slice(0, 35)}...
                                                     <span onClick={() => setExpandDesc(true)} className='cursor-pointer ms-2 underline text-blue-950'>Read More</span>
                                                 </>
